@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, View, StatusBar} from 'react-native';
+import {StyleSheet, Text, View, StatusBar, SafeAreaView} from 'react-native';
 import Header from './components/Header';
 import GameOverScreen from './screens/GameOverScreen';
 import GameScreen from './screens/GameScreen';
@@ -48,17 +48,19 @@ export default function App() {
     );
   }
   return (
-    <View style={styles.screen}>
+    <SafeAreaView style={styles.screen}>
+      {/* used for having a proper availability of screen withiut notch and extra
+      device specific things */}
       <View>
         <StatusBar
-          backgroundColor="#b3e6ff"
-          barStyle="dark-content"
-          hidden={true}
+          backgroundColor="#b23123"
+          barStyle="light-content"
+          hidden={false}
         />
       </View>
       <Header title="Guess A Number" />
       {content}
-    </View>
+    </SafeAreaView>
   );
 }
 
