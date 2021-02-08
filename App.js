@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState} from 'react'; 
 import {StyleSheet, Text, View, StatusBar} from 'react-native';
 import Header from './components/Header';
 import GameOverScreen from './screens/GameOverScreen';
