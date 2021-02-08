@@ -11,12 +11,6 @@ export default function App() {
 
   const [dataLoaded, setDataLoaded] = useState(false);
 
-  // <ScreenOrientation
-  //   orientation={PORTRAIT}
-  //   onChange={(orientation) => console.log('onChange', orientation)}
-  //   onDeviceChange={(orientation) => console.log('onDeviceChange', orientation)}
-  // />;
-
   // if (!dataLoaded) {
   //   return (
   //     <AppLoading
